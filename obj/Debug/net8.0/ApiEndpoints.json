@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "VideoManagementApp.Controllers.Api.VideoController",
+    "Method": "GetCatalogue",
+    "RelativePath": "api/Video/catalogue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoManagementApp.Controllers.Api.VideoController",
+    "Method": "Upload",
+    "RelativePath": "api/Video/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "files",
+        "Type": "Microsoft.AspNetCore.Http.IFormFileCollection",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

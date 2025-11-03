@@ -1,0 +1,40 @@
+@model VideoManagementApp.Models.ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm border-danger">
+                <div class="card-header bg-danger text-white">
+                    <h4 class="mb-0">
+                        <i class="bi bi-exclamation-triangle"></i> Error
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">An error occurred while processing your request.</h5>
+                    
+                    @if (Model?.ShowRequestId == true)
+                    {
+                        <p class="card-text">
+                            <strong>Request ID:</strong> 
+                            <code>@Model.RequestId</code>
+                        </p>
+                    }
+
+                    <hr />
+
+                    <div class="alert alert-info" role="alert">
+                        <i class="bi bi-info-circle"></i>
+                        Please try again or contact support if the problem persists.
+                    </div>
+
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-primary">
+                        <i class="bi bi-house"></i> Return to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
